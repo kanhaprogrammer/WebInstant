@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - WebInstant</title>
+    <meta name="description"
+        content="Get in touch with WebInstant for website design, development, and SEO services. Let's launch your online presence today.">
+    <meta name="keywords" content="Contact WebInstant, getwebinstant.com, web design help, hire web developer">
+    <meta name="author" content="WebInstant">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact WebInstant">
+    <meta property="og:description"
+        content="Reach out to WebInstant to start your journey toward a stunning, high-performing website.">
+    <meta property="og:image" content="https://getwebinstant.com/images/og-contact.jpg">
+    <meta property="og:url" content="https://getwebinstant.com/contact.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="WebInstant-Logo-01.png" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://getwebinstant.com/contact.html">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="WebInstant-Logo-02.png" alt="WebInstant Logo" class="logo" />
+            </a>
+            <div class="hamburger" id="hamburger">☰</div>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="plans.html" class="nav-link">Plans</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link cta">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section contact-page">
+        <h1 class="page">Contact Us</h1>
+        <p class="lead">Ready to launch? Tell us about your project and let's make it happen.</p>
+
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/mjgkbyok" method="POST"
+                novalidate>
+                <label>Full Name
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </label>
+                <label>Email
+                    <input type="email" name="_replyto" placeholder="you@example.com" required>
+                </label>
+                <label>Phone
+                    <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                </label>
+                <label>Project Type
+                    <select name="project" required>
+                        <option value="">Choose your Website Type</option>
+                        <option>Landing Page</option>
+                        <option>Portfolio Website</option>
+                        <option>Business Website</option>
+                    </select>
+                </label>
+                <label>Message
+                    <textarea name="message" rows="6" placeholder="Tell us about your project..."></textarea>
+                </label>
+
+                <!-- Status message area -->
+                <div id="formStatus" aria-live="polite" style="margin:12px 0"></div>
+
+                <button class="btn primary" type="submit">Request Quote</button>
+            </form>
+
+            <!-- Contact Info -->
+            <aside class="contact-info" style="text-align: left;">
+                <img src="WebInstant-Logo-02.png" alt="WebInstant Logo" class="contact-logo">
+
+                <h3 style="text-align: left;">Reach Us</h3>
+                <p class="contact-item" style="text-align: left;">
+                    <i class="fas fa-envelope" style="margin-right: 0;"></i>
+                    <a href="mailto:businesswebinstant@gmail.com">businesswebinstant@gmail.com</a>
+                </p>
+                <p class="contact-item" style="text-align: left;">
+                    <i class="fas fa-phone" style="margin-right: 0;"></i>
+                    <a href="tel:+919871072210">+91 98710 72210</a>
+                </p>
+
+                <h4 style="text-align: left; margin-bottom: 10px;">Follow Us</h4>
+                <div class="social-links" style="text-align: left;">
+                    <a href="https://www.linkedin.com/company/web-instant-agency/posts/?feedView=all" target="_blank"
+                        aria-label="LinkedIn" style="margin-right: 8px;">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61578298170309" target="_blank"
+                        aria-label="Facebook" style="margin-right: 8px;">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/businesswebinstant/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <style>
+        #formStatus .success {
+            color: #0a8;
+            font-weight: 500;
+        }
+
+        #formStatus .error {
+            color: #f33;
+            font-weight: 500;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contactForm');
+            const status = document.getElementById('formStatus');
+
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                const submitBtn = form.querySelector('[type="submit"]');
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+
+                const data = new FormData(form);
+
+                try {
+                    const res = await fetch(form.action, {
+                        method: form.method,
+                        body: data,
+                        headers: { 'Accept': 'application/json' }
+                    });
+
+                    if (res.ok) {
+                        status.innerHTML = '<div class="success">✅ Thank you — your message was sent successfully!</div>';
+                        form.reset();
+                    } else {
+                        const json = await res.json().catch(() => null);
+                        status.innerHTML = `<div class="error">❌ Error: ${json?.error || 'Something went wrong.'}</div>`;
+                    }
+                } catch (err) {
+                    status.innerHTML = `<div class="error">⚠️ Network error — please try again.</div>`;
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Request Quote';
+                }
+            });
+        });
+    </script>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="WebInstant-Logo-02.png" alt="WebInstant Logo" class="footer-logo">
+                <p class="footer-tagline">Launch Fast. Look Great.</p>
+            </div>
+            <div class="footer-section">
+                <h5>Contact</h5>
+                <p>Email: <a href="mailto:businesswebinstant@gmail.com">businesswebinstant@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919871072210">+91 98710 72210</a></p>
+            </div>
+            <div class="footer-section">
+                <h5>Legal</h5>
+                <ul class="footer-links">
+                    <li><a href="t&c.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+                    <li><a href="refund.html">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>© <span id="year"></span> WebInstant • All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

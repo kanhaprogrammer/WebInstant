@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Refund Policy - WebInstant</title>
+    <meta name="description" content="WebInstant Refund Policy. Learn about our refund eligibility, process, and terms for web design and development services.">
+    <meta name="keywords" content="WebInstant refund policy, money back guarantee, web design refund, development refund">
+    <meta name="author" content="WebInstant">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Refund Policy - WebInstant">
+    <meta property="og:description" content="Our refund policy ensures fairness for both clients and our development team.">
+    <meta property="og:image" content="https://getwebinstant.com/images/og-refund.jpg">
+    <meta property="og:url" content="https://getwebinstant.com/refund.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="WebInstant-Logo-Icon.ico" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://getwebinstant.com/refund.html">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Refund Policy Specific Styles */
+        .refund-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .refund-page h1.page {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, #1a60fe, #c139ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .refund-page .lead {
+            font-size: 1.1rem;
+            text-align: center;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .refund-container {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            margin-top: 2rem;
+        }
+
+        .refund-intro {
+            background: linear-gradient(135deg, #f8f9ff 0%, #f0f3ff 100%);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            border-left: 4px solid #1a60fe;
+        }
+
+        .refund-intro h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #0b0f32;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .refund-section {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .refund-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .refund-section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0b0f32;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .refund-section h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1a60fe;
+            margin: 1.5rem 0 0.8rem;
+        }
+
+        .refund-section p {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .refund-section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .refund-section li {
+            color: #555;
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+            padding-left: 0.5rem;
+        }
+
+        /* Eligibility Boxes */
+        .eligibility-box {
+            background: white;
+            border-radius: 12px;
+            padding: 1.8rem;
+            margin: 1.5rem 0;
+            border: 2px solid #e8f0fe;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .eligibility-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .eligibility-box.refundable {
+            border-left: 4px solid #00C9A7;
+        }
+
+        .eligibility-box.non-refundable {
+            border-left: 4px solid #f33;
+        }
+
+        .eligibility-box h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .eligibility-box.refundable h4 {
+            color: #00C9A7;
+        }
+
+        .eligibility-box.non-refundable h4 {
+            color: #f33;
+        }
+
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .process-step {
+            background: #f8f9ff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            border-top: 3px solid #1a60fe;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #1a60fe, #c139ff);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin: 0 auto 1rem;
+        }
+
+        .process-step h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #0b0f32;
+        }
+
+        /* Timeline Box */
+        .timeline-box {
+            background: linear-gradient(135deg, #1a60fe15 0%, #c139ff15 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid rgba(26, 96, 254, 0.1);
+        }
+
+        .timeline-box h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1a60fe;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .timeline-item i {
+            color: #1a60fe;
+            font-size: 1.2rem;
+            min-width: 24px;
+        }
+
+        /* Email Template */
+        .email-template {
+            background: #0b0f32;
+            color: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .email-template .email-line {
+            margin-bottom: 0.5rem;
+        }
+
+        .email-template .highlight {
+            color: #c139ff;
+        }
+
+        /* Contact Box */
+        .contact-refund {
+            background: linear-gradient(45deg, #1a60fe, #c139ff);
+            color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            margin: 2.5rem 0 1rem;
+        }
+
+        .contact-refund h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .contact-refund a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .contact-refund a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eee;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .refund-page {
+                padding: 2rem 1rem;
+            }
+            
+            .refund-page h1.page {
+                font-size: 2.2rem;
+            }
+            
+            .refund-container {
+                padding: 1.5rem;
+            }
+            
+            .refund-intro {
+                padding: 1.5rem;
+            }
+            
+            .refund-section h2 {
+                font-size: 1.3rem;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .eligibility-box {
+                padding: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .refund-page {
+                padding: 1.5rem 0.5rem;
+            }
+            
+            .refund-container {
+                padding: 1.2rem;
+            }
+            
+            .refund-section {
+                margin-bottom: 2rem;
+                padding-bottom: 1.5rem;
+            }
+            
+            .email-template {
+                padding: 1rem;
+                font-size: 0.8rem;
+            }
+            
+            .contact-refund {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="WebInstant-Logo-02.png" alt="WebInstant Logo" class="logo" />
+            </a>
+            <div class="hamburger" id="hamburger">☰</div>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="plans.html" class="nav-link">Plans</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link cta">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section refund-page">
+        <h1 class="page">Refund Policy</h1>
+        <p class="lead">At WebInstant, we aim to deliver high-quality websites and digital services with full transparency and customer satisfaction.</p>
+
+        <div class="refund-container">
+            <!-- Introduction -->
+            <div class="refund-intro">
+                <h2><i class="fas fa-handshake"></i> Our Commitment to Fairness</h2>
+                <p>Our refund policy is designed to be fair for both the client and our team. We believe in transparent communication and reasonable solutions.</p>
+            </div>
+
+            <!-- Section 1: Eligibility for Refund -->
+            <section class="refund-section">
+                <h2><i class="fas fa-check-circle"></i> 1. Eligibility for Refund</h2>
+                <p>You may request a refund only under the following conditions:</p>
+
+                <div class="eligibility-box refundable">
+                    <h4><i class="fas fa-calendar-check"></i> A. Before Work Begins</h4>
+                    <p>If you request cancellation before the project starts, you are eligible for a <strong>100% refund</strong>.</p>
+                </div>
+
+                <div class="eligibility-box refundable">
+                    <h4><i class="fas fa-file-alt"></i> B. Within the First Draft Stage</h4>
+                    <p>If we have delivered the first draft and you are dissatisfied, you may request a partial refund.</p>
+                    <div class="highlight-box" style="background: rgba(0, 201, 167, 0.1); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                        <p><strong>Note:</strong> In this case, 40%–50% of the project amount may be refunded depending on the work completed.</p>
+                    </div>
+                </div>
+
+                <div class="eligibility-box refundable">
+                    <h4><i class="fas fa-exclamation-triangle"></i> C. If WebInstant Fails to Deliver</h4>
+                    <p>You are eligible for a full refund if:</p>
+                    <ul>
+                        <li>We fail to start your project within the agreed timeline</li>
+                        <li>We fail to deliver the initial draft within the promised timeframe (unless delayed due to client-side issues)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 2: Non-Refundable Situations -->
+            <section class="refund-section">
+                <h2><i class="fas fa-times-circle"></i> 2. Non-Refundable Situations</h2>
+                <p>Refunds are not applicable if:</p>
+                
+                <div class="eligibility-box non-refundable">
+                    <h4><i class="fas fa-ban"></i> Project Stage Issues</h4>
+                    <ul>
+                        <li>You approved the design and asked for final development</li>
+                        <li>The website has been fully developed or delivered</li>
+                        <li>Delays occur due to missing client inputs (content, images, login access, etc.)</li>
+                        <li>You decide to discontinue the service after substantial progress</li>
+                    </ul>
+                </div>
+
+                <div class="eligibility-box non-refundable">
+                    <h4><i class="fas fa-shopping-cart"></i> Third-Party Costs</h4>
+                    <ul>
+                        <li>Hosting/domain charges are already purchased, as these are third-party, non-refundable services</li>
+                        <li>Custom requests, premium elements, or paid plugins have already been purchased on your behalf</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 3: Special Cases -->
+            <section class="refund-section">
+                <h2><i class="fas fa-store"></i> 3. E-Commerce, Business, or Custom Websites</h2>
+                <p>These projects require more time and resources. Due to the complexity:</p>
+                <ul>
+                    <li><strong>Refunds are not provided once development has started</strong></li>
+                    <li>Partial refunds may be considered only before delivering the first draft</li>
+                </ul>
+            </section>
+
+            <!-- Section 4: Processing Time -->
+            <section class="refund-section">
+                <h2><i class="fas fa-clock"></i> 4. Processing Time</h2>
+                <p>Approved refunds will be processed within:</p>
+                
+                <div class="timeline-box">
+                    <h4><i class="fas fa-rupee-sign"></i> India (UPI/Bank Transfer)</h4>
+                    <div class="timeline-item">
+                        <i class="fas fa-calendar-day"></i>
+                        <span><strong>3–7 business days</strong> from approval date</span>
+                    </div>
+                    
+                    <h4><i class="fas fa-globe-americas"></i> International Payments (PayPal/Bank Transfer)</h4>
+                    <div class="timeline-item">
+                        <i class="fas fa-calendar-week"></i>
+                        <span><strong>5–14 business days</strong> from approval date</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: How to Request a Refund -->
+            <section class="refund-section">
+                <h2><i class="fas fa-envelope-open-text"></i> 5. How to Request a Refund</h2>
+                <p>To submit a refund request, email us at:</p>
+                
+                <div class="email-template">
+                    <div class="email-line">To: <span class="highlight">businesswebinstant@gmail.com</span></div>
+                    <div class="email-line">Subject: <span class="highlight">Refund Request – [Your Project Name]</span></div>
+                    <br>
+                    <div class="email-line"><span class="highlight">Include:</span></div>
+                    <div class="email-line">• Your Full Name</div>
+                    <div class="email-line">• Project Details & Order Number</div>
+                    <div class="email-line">• Order Date</div>
+                    <div class="email-line">• Reason for Refund Request</div>
+                    <div class="email-line">• Any Supporting Documentation</div>
+                </div>
+                
+                <div class="highlight-box" style="background: rgba(26, 96, 254, 0.1); padding: 1rem; border-radius: 8px;">
+                    <p><strong><i class="fas fa-hourglass-half"></i> Response Time:</strong> Our team will review and respond within 48 hours.</p>
+                </div>
+            </section>
+
+            <!-- Section 6: Fair Use Policy -->
+            <section class="refund-section">
+                <h2><i class="fas fa-balance-scale-right"></i> 6. Fair Use Policy</h2>
+                <p>We reserve the right to decline unfair refund requests, especially when:</p>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Service Misuse</h4>
+                        <p>A client misuses the service</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Unlimited Revisions</h4>
+                        <p>Requests unlimited revisions beyond project scope</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Work Usage</h4>
+                        <p>Downloads or uses our work before requesting a refund</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 7: Agreement -->
+            <section class="refund-section">
+                <h2><i class="fas fa-file-signature"></i> 7. Agreement</h2>
+                <p>By purchasing any WebInstant plan, you agree to this Refund Policy.</p>
+            </section>
+
+            <!-- Contact Section -->
+            <div class="contact-refund">
+                <h3><i class="fas fa-headset"></i> Need Help?</h3>
+                <p>Have questions about our refund policy? We're here to help!</p>
+                <a href="mailto:businesswebinstant@gmail.com">
+                    <i class="fas fa-envelope"></i> Contact Support
+                </a>
+            </div>
+
+            <div class="last-updated">
+                <p><i class="fas fa-calendar-alt"></i> Last Updated: <span id="currentDate"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="WebInstant-Logo-02.png" alt="WebInstant Logo" class="footer-logo">
+                <p class="footer-tagline">Launch Fast. Look Great.</p>
+            </div>
+            <div class="footer-section">
+                <h5>Contact</h5>
+                <p>Email: <a href="mailto:businesswebinstant@gmail.com">businesswebinstant@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919871072210">+91 98710 72210</a></p>
+            </div>
+            <div class="footer-section">
+                <h5>Legal</h5>
+                <ul class="footer-links">
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="refund.html" class="active">Refund Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <small>© <span id="year"></span> WebInstant • All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Set current date
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        // Set footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile navigation toggle
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.getElementById('mainNav').classList.toggle('show');
+        });
+
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('.refund-section h2').forEach(header => {
+            header.style.cursor = 'pointer';
+            header.addEventListener('click', () => {
+                const section = header.parentElement;
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+
+</html>

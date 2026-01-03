@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sign Up - WebInstant | Create Your Account</title>
+  <meta name="description" content="Create your WebInstant account to access premium website design, development, and hosting services. Start your journey today.">
+  <meta name="keywords" content="WebInstant sign up, create account, register, web design services, website development">
+  <meta name="author" content="WebInstant">
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="Sign Up - WebInstant | Create Your Account">
+  <meta property="og:description" content="Join WebInstant to access premium web design and development services. Create your account in minutes and get started.">
+  <meta property="og:image" content="https://getwebinstant.com/images/og-signup.jpg">
+  <meta property="og:url" content="https://getwebinstant.com/signup.html">
+  <meta property="og:type" content="website">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://getwebinstant.com/signup.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="WebInstant-Logo-Icon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="auth.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="WebInstant-Logo-02.png" alt="WebInstant Logo" class="logo">
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="plans.html" class="nav-link">Plans</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="login.html" class="nav-link cta">Log in</a>
+        
+        <!-- Profile Section -->
+        <div class="profile-container" style="display: none;">
+          <div class="profile-icon" id="profile-icon">JS</div>
+          <div class="profile-dropdown">
+            <div class="profile-header">
+              <div class="profile-avatar" id="user-avatar">JS</div>
+              <div class="profile-name" id="user-name">John Smith</div>
+              <div class="profile-email" id="user-email">john@example.com</div>
+            </div>
+            <ul class="profile-menu">
+              <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+              <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+              <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+              <li><a href="#" id="logout-btn" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Signup Form -->
+  <main>
+    <section class="auth-section">
+      <h1>Create Your Account</h1>
+      <p class="auth-subtitle">Join WebInstant and start building amazing websites</p>
+      
+      <form id="signupForm" class="auth-form" method="POST">
+        <div class="form-group">
+          <label for="name">
+            <i class="fas fa-user"></i> Full Name
+          </label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">
+            <i class="fas fa-envelope"></i> Email Address
+          </label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">
+            <i class="fas fa-lock"></i> Password
+          </label>
+          <div class="password-wrapper">
+            <input type="password" id="password" name="password" placeholder="Create a password (min. 6 characters)" required>
+            <button type="button" class="toggle-password" id="togglePassword">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+          <div class="password-strength">
+            <div class="strength-bar">
+              <span class="strength-segment"></span>
+              <span class="strength-segment"></span>
+              <span class="strength-segment"></span>
+              <span class="strength-segment"></span>
+            </div>
+            <span class="strength-text" id="strengthText">Password strength</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">
+            <i class="fas fa-lock"></i> Confirm Password
+          </label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="terms" name="terms" required>
+            <span>I agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a></span>
+          </label>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="newsletter" name="newsletter" checked>
+            <span>Subscribe to our newsletter for updates and offers</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-signup">
+          <i class="fas fa-user-plus"></i> Create Account
+        </button>
+
+        <div id="signupStatus" class="status-message"></div>
+      </form>
+
+      <div class="auth-divider">
+        <span>Or sign up with</span>
+      </div>
+
+      <div class="social-login">
+        <button class="social-btn google" id="googleSignup">
+          <i class="fab fa-google"></i> Google
+        </button>
+        <button class="social-btn github" id="githubSignup">
+          <i class="fab fa-github"></i> GitHub
+        </button>
+      </div>
+
+      <p class="auth-footer">Already have an account? <a href="login.html">Log in here</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <img src="WebInstant-Logo-02.png" alt="WebInstant Logo" class="footer-logo">
+        <p class="footer-tagline">Creating stunning websites instantly</p>
+      </div>
+      <div class="footer-section">
+        <h5>Contact</h5>
+        <p>Email: <a href="mailto:businesswebinstant@gmail.com">businesswebinstant@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919871072210">+91 98710 72210</a></p>
+      </div>
+      <div class="footer-section">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="plans.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>© <span id="year"></span> WebInstant • All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Toggle mobile navigation
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('mainNav');
+    
+    if (hamburger && mainNav) {
+      hamburger.addEventListener('click', () => {
+        mainNav.classList.toggle('open');
+        const icon = hamburger.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+      });
+    }
+    
+    // Toggle password visibility
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+    
+    if (togglePassword && passwordInput) {
+      togglePassword.addEventListener('click', () => {
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        const icon = togglePassword.querySelector('i');
+        icon.classList.toggle('fa-eye');
+        icon.classList.toggle('fa-eye-slash');
+      });
+    }
+    
+    // Password strength checker
+    const passwordField = document.getElementById('password');
+    const strengthText = document.getElementById('strengthText');
+    const strengthSegments = document.querySelectorAll('.strength-segment');
+    
+    if (passwordField && strengthText) {
+      passwordField.addEventListener('input', function() {
+        const password = this.value;
+        let strength = 0;
+        
+        // Length check
+        if (password.length >= 8) strength++;
+        
+        // Contains lowercase
+        if (/[a-z]/.test(password)) strength++;
+        
+        // Contains uppercase
+        if (/[A-Z]/.test(password)) strength++;
+        
+        // Contains numbers
+        if (/[0-9]/.test(password)) strength++;
+        
+        // Contains special characters
+        if (/[^A-Za-z0-9]/.test(password)) strength++;
+        
+        // Update strength indicator
+        strengthSegments.forEach((segment, index) => {
+          segment.classList.remove('weak', 'medium', 'strong');
+          if (index < strength) {
+            if (strength <= 2) {
+              segment.classList.add('weak');
+            } else if (strength <= 4) {
+              segment.classList.add('medium');
+            } else {
+              segment.classList.add('strong');
+            }
+          }
+        });
+        
+        // Update text
+        if (password.length === 0) {
+          strengthText.textContent = 'Password strength';
+          strengthText.className = 'strength-text';
+        } else if (strength <= 2) {
+          strengthText.textContent = 'Weak password';
+          strengthText.className = 'strength-text weak';
+        } else if (strength <= 4) {
+          strengthText.textContent = 'Medium strength';
+          strengthText.className = 'strength-text medium';
+        } else {
+          strengthText.textContent = 'Strong password';
+          strengthText.className = 'strength-text strong';
+        }
+      });
+    }
+    
+    // Signup form submission
+    const signupForm = document.getElementById('signupForm');
+    const signupStatus = document.getElementById('signupStatus');
+    
+    if (signupForm) {
+      signupForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        const terms = document.getElementById('terms').checked;
+        
+        // Validation
+        if (!name || !email || !password || !confirmPassword) {
+          showStatus('Please fill in all fields', 'error');
+          return;
+        }
+        
+        if (!isValidEmail(email)) {
+          showStatus('Please enter a valid email address', 'error');
+          return;
+        }
+        
+        if (password.length < 6) {
+          showStatus('Password must be at least 6 characters long', 'error');
+          return;
+        }
+        
+        if (password !== confirmPassword) {
+          showStatus('Passwords do not match', 'error');
+          return;
+        }
+        
+        if (!terms) {
+          showStatus('You must agree to the terms and conditions', 'error');
+          return;
+        }
+        
+        // Show loading state
+        const submitBtn = signupForm.querySelector('.btn-signup');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Creating Account...';
+        submitBtn.disabled = true;
+        
+        // Simulate API call
+        setTimeout(() => {
+          // Store user data
+          const userData = {
+            name: name,
+            email: email,
+            initials: name.substring(0, 2).toUpperCase(),
+            provider: 'email'
+          };
+          
+          localStorage.setItem('userLoggedIn', 'true');
+          localStorage.setItem('userName', userData.name);
+          localStorage.setItem('userEmail', userData.email);
+          localStorage.setItem('userInitials', userData.initials);
+          localStorage.setItem('authProvider', userData.provider);
+          
+          showStatus('Account created successfully! Redirecting...', 'success');
+          
+          // Redirect to welcome page
+          setTimeout(() => {
+            window.location.href = 'index.html';
+          }, 1500);
+        }, 1500);
+      });
+    }
+    
+    // Google Signup
+    const googleSignupBtn = document.getElementById('googleSignup');
+    if (googleSignupBtn) {
+      googleSignupBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        const originalText = this.innerHTML;
+        this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Connecting...';
+        this.disabled = true;
+        
+        // In a real app, this would redirect to Google OAuth
+        showStatus('Connecting to Google...', 'info');
+        
+        setTimeout(() => {
+          // Simulate Google OAuth success
+          const userData = {
+            name: "Google User",
+            email: "google.user@example.com",
+            initials: "GU",
+            provider: 'google',
+            avatar: 'https://i.pravatar.cc/150?img=8'
+          };
+          
+          handleSocialSignup(userData, 'Google');
+          
+          // Reset button
+          this.innerHTML = originalText;
+          this.disabled = false;
+        }, 2000);
+      });
+    }
+    
+    // GitHub Signup
+    const githubSignupBtn = document.getElementById('githubSignup');
+    if (githubSignupBtn) {
+      githubSignupBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        const originalText = this.innerHTML;
+        this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Connecting...';
+        this.disabled = true;
+        
+        // In a real app, this would redirect to GitHub OAuth
+        showStatus('Connecting to GitHub...', 'info');
+        
+        setTimeout(() => {
+          // Simulate GitHub OAuth success
+          const userData = {
+            name: "GitHub User",
+            email: "github.user@example.com",
+            initials: "GH",
+            provider: 'github',
+            avatar: 'https://i.pravatar.cc/150?img=12'
+          };
+          
+          handleSocialSignup(userData, 'GitHub');
+          
+          // Reset button
+          this.innerHTML = originalText;
+          this.disabled = false;
+        }, 2000);
+      });
+    }
+    
+    // Handle social signup
+    function handleSocialSignup(userData, provider) {
+      localStorage.setItem('userLoggedIn', 'true');
+      localStorage.setItem('userName', userData.name);
+      localStorage.setItem('userEmail', userData.email);
+      localStorage.setItem('userInitials', userData.initials);
+      localStorage.setItem('authProvider', userData.provider);
+      
+      if (userData.avatar) {
+        localStorage.setItem('userAvatar', userData.avatar);
+      }
+      
+      // Also mark that user came from social signup (for welcome message)
+      localStorage.setItem('socialSignup', provider);
+      
+      showStatus(`${provider} signup successful! Redirecting...`, 'success');
+      
+      // Redirect to welcome page
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 1500);
+    }
+    
+    // Helper functions
+    function isValidEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    }
+    
+    function showStatus(message, type) {
+      if (!signupStatus) return;
+      
+      signupStatus.textContent = message;
+      signupStatus.className = 'status-message ' + type;
+      signupStatus.style.display = 'block';
+      
+      setTimeout(() => {
+        signupStatus.style.display = 'none';
+      }, 5000);
+    }
+    
+    // Check if user is already logged in
+    function checkLoginStatus() {
+      const loggedIn = localStorage.getItem('userLoggedIn') === 'true';
+      if (loggedIn) {
+        window.location.href = 'index.html';
+      }
+    }
+    
+    // Initialize
+    checkLoginStatus();
+  </script>
+</body>
+</html>
