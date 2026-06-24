@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebInstant — Launch Fast. Look Great.</title>
+    <meta
+      name="description"
+      content="WebInstant builds fast, responsive, and conversion-focused websites for businesses, professionals, clinics, and startups."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><img src="logo.png" alt="Logo-WebInstant"></a>
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-link" data-page="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-link" data-page="about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="services.html" class="nav-link" data-page="services.html"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="plans.html" class="nav-link" data-page="plans.html"
+              >Plans</a
+            >
+          </li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li>
+            <a href="contact.html" class="nav-link" data-page="contact.html"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="container">
+        <div class="hero-inner">
+          <!-- Left: Content -->
+          <div class="hero-content">
+            <div class="hero-eyebrow">Web Design &amp; Development Agency</div>
+            <h1 class="hero-title">
+              Launch <span class="gradient-text">Fast.</span><br />
+              Look <span class="gradient-text">Great.</span>
+            </h1>
+            <p class="hero-desc">
+              WebInstant builds fast, responsive, and conversion-focused
+              websites for businesses, professionals, clinics, and startups.
+            </p>
+            <div class="hero-buttons">
+              <button
+                class="btn btn-primary btn-lg"
+                onclick="
+                  openWhatsApp(
+                    'Hi! I would like to get a free quote for my website.',
+                  )
+                "
+              >
+                💬 Get a Free Quote
+              </button>
+              <a href="services.html" class="btn btn-secondary btn-lg"
+                >Explore Services →</a
+              >
+            </div>
+          </div>
+
+          <!-- Right: Work Slider -->
+          <div class="hero-image">
+            <div class="hero-slider">
+              <!-- Slide 1 – E-Commerce (MittiMart) -->
+              <div class="hero-slide active">
+                <img
+                  src="mittimart-e-commerce-website.png"
+                  alt="MittiMart E-Commerce Website"
+                  loading="eager"
+                />
+                <div class="hero-slide-caption">
+                  <div class="hero-slide-name">MittiMart — E-commerce</div>
+                </div>
+              </div>
+
+              <!-- Slide 2 – Portfolio (Think Visual) -->
+              <div class="hero-slide">
+                <img
+                  src="think-visual.png"
+                  alt="Think Visual Portfolio Website"
+                  loading="lazy"
+                />
+                <div class="hero-slide-caption">
+                  <div class="hero-slide-name">
+                    Think Visual Portfolio
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 – Business / Clinic -->
+              <div class="hero-slide">
+                <img
+                  src="kamleshwar-portfolio.png"
+                  alt="Clinic Website Design"
+                  loading="lazy"
+                />
+                <div class="hero-slide-caption">
+                  <div class="hero-slide-name">
+                    Kamleshwar Portfolio
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 – Real Estate -->
+              <div class="hero-slide">
+                <img
+                  src="clothbrand-e-commerce-website.png"
+                  alt="Real Estate Website Design"
+                  loading="lazy"
+                />
+                <div class="hero-slide-caption">
+                  <div class="hero-slide-name">
+                    Cloth Brand - E-Commerce Website
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slider Controls -->
+              <div class="slider-controls">
+                <button
+                  class="slider-btn slider-prev"
+                  aria-label="Previous slide"
+                >
+                  &#8592;
+                </button>
+                <div class="slider-dots">
+                  <button
+                    class="slider-dot active"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button class="slider-dot" aria-label="Slide 2"></button>
+                  <button class="slider-dot" aria-label="Slide 3"></button>
+                  <button class="slider-dot" aria-label="Slide 4"></button>
+                </div>
+                <button class="slider-btn slider-next" aria-label="Next slide">
+                  &#8594;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES STRIP -->
+    <div class="features-strip">
+      <div class="container">
+        <div class="features-strip-inner">
+          <div class="feature-item">
+            <span class="feature-icon">📱</span>
+            <div>
+              <div class="feature-title">Responsive Websites</div>
+              <div class="feature-desc">Every Device, Every Screen</div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">💬</span>
+            <div>
+              <div class="feature-title">WhatsApp Direct Support</div>
+              <div class="feature-desc">Reach us anytime, instantly</div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🔍</span>
+            <div>
+              <div class="feature-title">SEO Ready</div>
+              <div class="feature-desc">Built-in from Day One</div>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">⚡</span>
+            <div>
+              <div class="feature-title">Fast Delivery</div>
+              <div class="feature-desc">Most projects in just days</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-label">What We Do</div>
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-subtitle">
+            From single-page landing pages to full e-commerce stores, we cover
+            it end to end.
+          </p>
+        </div>
+        <div class="grid-4" style="margin-top: 48px">
+          <div class="card reveal reveal-delay-1">
+            <span class="card-icon">💼</span>
+            <h3 class="card-title">Portfolio Websites</h3>
+            <p class="card-desc">
+              Showcase your work with a clean, compelling portfolio that wins
+              clients.
+            </p>
+            <ul class="card-features">
+              <li>CMS Integration</li>
+              <li>Filterable Projects</li>
+            </ul>
+          </div>
+          <div class="card reveal reveal-delay-2">
+            <span class="card-icon">🏢</span>
+            <h3 class="card-title">Business Websites</h3>
+            <p class="card-desc">
+              Professional websites that help businesses generate leads and grow
+              online.
+            </p>
+            <ul class="card-features">
+              <li>SEO-Aware Structure</li>
+              <li>Lead Capture Forms</li>
+            </ul>
+          </div>
+          <div class="card reveal reveal-delay-1">
+            <span class="card-icon">🌐</span>
+            <h3 class="card-title">Hosting &amp; Domains</h3>
+            <p class="card-desc">
+              Complete domain, hosting, and deployment setup so you go live
+              without stress.
+            </p>
+            <ul class="card-features">
+              <li>Complete Setup &amp; Configuration</li>
+              <li>Find the Perfect Domain Name</li>
+            </ul>
+          </div>
+          <div class="card reveal reveal-delay-2">
+            <span class="card-icon">🔧</span>
+            <h3 class="card-title">Maintenance &amp; Support</h3>
+            <p class="card-desc">
+              We stay by your side after launch — updates, fixes, and ongoing
+              support.
+            </p>
+            <ul class="card-features">
+              <li>Edit &amp; Manage Anytime</li>
+              <li>Solve Bugs and Errors</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top: 40px">
+          <a href="services.html" class="btn btn-outline"
+            >View All Services →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUSTED FOR -->
+    <section
+      class="section-sm"
+      style="
+        background: var(--card-bg);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      "
+    >
+      <div class="container text-center">
+        <div class="section-label">Industries We Serve</div>
+        <h2 class="section-title reveal">Trusted For:</h2>
+        <div class="badges-wrap reveal">
+          <span class="badge-pill">Clinics</span>
+          <span class="badge-pill">Dentists</span>
+          <span class="badge-pill">Gyms</span>
+          <span class="badge-pill">Real Estate</span>
+          <span class="badge-pill">Lawyers</span>
+          <span class="badge-pill">Startups</span>
+          <span class="badge-pill">Portfolios</span>
+          <span class="badge-pill">E-commerce</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-label">The Process</div>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">
+            A clear, simple process so you always know what's happening next.
+          </p>
+        </div>
+        <div class="steps-wrap">
+          <div class="step reveal reveal-delay-1">
+            <div class="step-num">1</div>
+            <h3 class="step-title">Discuss Your Requirements</h3>
+            <p class="step-desc">
+              We chat on WhatsApp or email to understand your goals and what
+              your site needs to achieve.
+            </p>
+          </div>
+          <div class="step reveal reveal-delay-2">
+            <div class="step-num">2</div>
+            <h3 class="step-title">Receive Design Proposal</h3>
+            <p class="step-desc">
+              We share a tailored design concept and plan built around your
+              brand and audience.
+            </p>
+          </div>
+          <div class="step reveal reveal-delay-1">
+            <div class="step-num">3</div>
+            <h3 class="step-title">Development Begins</h3>
+            <p class="step-desc">
+              Our team builds your site with clean code, speed optimization, and
+              SEO built in from day one.
+            </p>
+          </div>
+          <div class="step reveal reveal-delay-2">
+            <div class="step-num">4</div>
+            <h3 class="step-title">Revisions &amp; Launch</h3>
+            <p class="step-desc">
+              We refine based on your feedback, then launch your site live —
+              fast and on time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE WEBINSTANT -->
+    <section
+      class="section"
+      style="
+        background: var(--card-bg);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      "
+    >
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-label">Why Us</div>
+          <h2 class="section-title">Why Choose WebInstant?</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal reveal-delay-1">
+            <div class="why-icon">🚀</div>
+            <h3 class="why-title">Fast Delivery</h3>
+            <p class="why-desc">
+              Most projects delivered within days, not weeks. We move fast
+              without cutting corners.
+            </p>
+          </div>
+          <div class="why-card reveal reveal-delay-2">
+            <div class="why-icon">🎧</div>
+            <h3 class="why-title">Personal Support</h3>
+            <p class="why-desc">
+              Direct WhatsApp access to your project team. No ticket queues, no
+              waiting around.
+            </p>
+          </div>
+          <div class="why-card reveal reveal-delay-3">
+            <div class="why-icon">💲</div>
+            <h3 class="why-title">Affordable Pricing</h3>
+            <p class="why-desc">
+              Premium quality without the premium price tag. Every plan is
+              transparent and fair.
+            </p>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top: 40px">
+          <button
+            class="btn btn-primary btn-lg"
+            onclick="
+              openWhatsApp('Hi! I want to start my project with WebInstant.')
+            "
+          >
+            🚀 Start Your Project
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUILT WITH -->
+    <section class="section">
+      <div class="container text-center">
+        <div class="section-label">Tech Stack</div>
+        <h2 class="section-title reveal">Built With</h2>
+        <div class="tech-wrap reveal">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Responsive Design</span>
+          <span class="tech-tag">SEO Best Practices</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section
+      class="section"
+      style="
+        background: var(--card-bg);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      "
+    >
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-label">Client Stories</div>
+          <h2 class="section-title">What Our Clients Say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "WebInstant delivered my website faster than expected, and it's
+              helped me land 3 new clients already!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">AS</div>
+              <div>
+                <div class="testimonial-name">Aayush Sharma</div>
+                <div class="testimonial-role">Founder, Think Visual</div>
+                <div class="testimonial-project">Portfolio Website</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Smooth, affordable, and delivered in just three days. WebInstant
+              shows the right mindset to turn ideas into production-ready
+              websites."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">TA</div>
+              <div>
+                <div class="testimonial-name">Tony Aar</div>
+                <div class="testimonial-role">Founder, MittiMart</div>
+                <div class="testimonial-project">E-Commerce Website</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANS PREVIEW -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-label">Pricing</div>
+          <h2 class="section-title">Recommended Plans</h2>
+          <p class="section-subtitle">
+            Transparent pricing, no hidden fees. Every plan includes direct
+            WhatsApp support.
+          </p>
+        </div>
+        <div
+          class="grid-2"
+          style="
+            margin-top: 48px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          <div class="plan-card reveal reveal-delay-1">
+            <h3 class="plan-name">Professional Portfolio</h3>
+            <div class="plan-price">₹7,000</div>
+            <div class="plan-delivery">⏱ Delivery: 4–6 Days</div>
+            <div class="plan-divider"></div>
+            <ul class="plan-features">
+              <li>Multi-page Website (About, Skills, Projects, Contact)</li>
+              <li>Resume Download</li>
+              <li>Premium Animations</li>
+              <li>SEO Setup</li>
+            </ul>
+            <button
+              class="btn btn-outline"
+              style="width: 100%"
+              onclick="
+                openWhatsApp(
+                  'Hi! I am interested in the Professional Portfolio plan at ₹7,000.',
+                )
+              "
+            >
+              Choose Plan →
+            </button>
+          </div>
+          <div class="plan-card featured reveal reveal-delay-2">
+            <div class="plan-badge popular">Most Popular</div>
+            <h3 class="plan-name">Business Professional</h3>
+            <div class="plan-price">₹15,000</div>
+            <div class="plan-delivery">⏱ Delivery: 7–10 Days</div>
+            <div class="plan-divider"></div>
+            <ul class="plan-features">
+              <li>6–8 Pages, Premium UI/UX</li>
+              <li>Lead Generation Features</li>
+              <li>Speed Optimization</li>
+              <li>SEO Structure</li>
+              <li>Blog System</li>
+              <li>30 Days Free Maintenance</li>
+            </ul>
+            <button
+              class="btn btn-primary"
+              style="width: 100%"
+              onclick="
+                openWhatsApp(
+                  'Hi! I am interested in the Business Professional plan at ₹15,000.',
+                )
+              "
+            >
+              Choose Plan →
+            </button>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top: 32px">
+          <a href="plans.html" class="btn btn-outline">View All Plans →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENT PROJECTS -->
+    <section
+      class="section"
+      id="projects"
+      style="
+        background: var(--card-bg);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      "
+    >
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-label">Portfolio</div>
+          <h2 class="section-title">Recent Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal reveal-delay-1">
+            <img
+              src="mittimart-e-commerce-website.png"
+              alt="MittiMart E-Commerce Website"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <div class="project-tag">E-Commerce Website</div>
+              <div class="project-name">MittiMart</div>
+              <p class="project-desc">
+                A fully-responsive multi-page e-commerce platform for
+                sustainable, handmade clay and artisanal products.
+              </p>
+            </div>
+          </div>
+          <div class="project-card reveal reveal-delay-2">
+            <img
+              src="think-visual.png"
+              alt="Think Visual Portfolio Website"
+              loading="lazy"
+            />
+            <div class="project-overlay">
+              <div class="project-tag">Portfolio Website</div>
+              <div class="project-name">Think Visual</div>
+              <p class="project-desc">
+                A cinematic portfolio for video editor Aayush Sharma, with
+                smooth interactions and elegant typography.
+              </p>
+            </div>
+          </div>
+        </div>
+                  <div class="text-center" style="margin-top: 32px">
+          <a href="projects.html" class="btn btn-outline">View All Projects →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center reveal">
+          <div class="section-label">FAQ</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-wrap">
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              Is domain and hosting included?
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Domain and hosting are not included by default, but can be
+                arranged separately as an add-on. We'll guide you through the
+                entire setup so you don't have to figure it out alone.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              Will my website work on mobile?
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Yes, every website we build is fully responsive and tested
+                across mobile, tablet, and desktop. Your visitors will get a
+                great experience on any screen size.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              Can I request changes after delivery?
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Absolutely. Minor revisions are included with every plan. The
+                number of free revisions depends on your package, and we're
+                always flexible to ensure you're happy with the result.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              How will we communicate during the project?
+              <span class="faq-chevron">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                All discussions, updates, and deliveries happen through WhatsApp
+                and email — fast, convenient, and everything in one place so
+                nothing gets missed.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2 class="cta-band-title">
+            Ready to Build Your <span class="gradient-text">Website?</span>
+          </h2>
+          <p class="cta-band-desc">
+            Whether you're a business owner, doctor, gym owner, lawyer, or
+            startup — we'll help you create a modern online presence that
+            actually works.
+          </p>
+          <div class="cta-band-buttons">
+            <button
+              class="btn btn-whatsapp btn-lg"
+              onclick="
+                openWhatsApp(
+                  'Hi WebInstant! I am ready to build my website. Let\'s talk!',
+                )
+              "
+            >
+              💬 Get Free Quote on WhatsApp
+            </button>
+            <a href="contact.html" class="btn btn-secondary btn-lg"
+              >Send a Message</a
+            >
+          </div>
+          <p class="cta-note">
+            No commitment needed. We'll respond within a few hours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="nav-logo"><img src="logo.png" alt="Logo-WebInstant"></div>
+            <a
+              href="mailto:businesswebinstant@gmail.com"
+              class="footer-contact-item"
+              >📧 businesswebinstant@gmail.com</a
+            >
+            <a href="tel:+919871072210" class="footer-contact-item"
+              >📞 +91 98710 72210</a
+            >
+          </div>
+          <div>
+            <div class="footer-col-title">Services</div>
+            <ul class="footer-links">
+              <li><a href="services.html">Portfolio Websites</a></li>
+              <li><a href="services.html">Business Websites</a></li>
+              <li><a href="services.html">Clinic Websites</a></li>
+              <li><a href="services.html">Real Estate Websites</a></li>
+              <li><a href="services.html">Landing Pages</a></li>
+              <li><a href="services.html">Website Redesign</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Company</div>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Get In Touch</div>
+            <p
+              style="
+                font-size: 0.85rem;
+                color: var(--gray);
+                margin-bottom: 16px;
+              "
+            >
+              Have a project in mind? Let's talk — we respond fast.
+            </p>
+            <button class="btn btn-whatsapp" onclick="openWhatsApp()">
+              💬 WhatsApp Us
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div
+          class="container"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            width: 100%;
+          "
+        >
+          <span>© 2026 WebInstant • All rights reserved.</span>
+          <div class="footer-legal">
+            <a href="t&c.html">Terms &amp; Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="refund.html">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us — WebInstant</title>
+    <meta
+      name="description"
+      content="Ready to launch? Tell us about your project and we'll get back to you within 48 hours — usually much faster."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><img src="logo.png" alt="Logo-WebInstant"></a>
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-link" data-page="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-link" data-page="about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="services.html" class="nav-link" data-page="services.html"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="plans.html" class="nav-link" data-page="plans.html"
+              >Plans</a
+            >
+          </li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li>
+            <a href="contact.html" class="nav-link" data-page="contact.html"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-bg"></div>
+      <div class="container page-hero-inner text-center">
+        <div class="section-label">Contact Us</div>
+        <h1 class="page-hero-title reveal">
+          Let's Build <span class="gradient-text">Together</span>
+        </h1>
+        <p class="page-hero-desc reveal" style="margin: 0 auto">
+          Ready to launch? Tell us about your project and we'll get back to you
+          within 48 hours — usually much faster.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- FORM -->
+          <div class="contact-form-card reveal">
+            <h2 class="form-title">Send a Message</h2>
+            <p class="form-desc">
+              Fill in the details below and we'll reach out to discuss your
+              project.
+            </p>
+
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="name">Full Name *</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your full name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address *</label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number *</label>
+                <input
+                  class="form-input"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+91 XXXXX XXXXX"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="service">Service Needed</label>
+                <select class="form-select" id="service" name="service">
+                  <option value="">Select a service…</option>
+                  <option>Portfolio Website</option>
+                  <option>Business Website</option>
+                  <option>Clinic Website</option>
+                  <option>Real Estate Website</option>
+                  <option>Landing Page</option>
+                  <option>Website Redesign</option>
+                  <option>E-Commerce Website</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea
+                  class="form-textarea"
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your project — goals, timeline, budget, any special requirements…"
+                ></textarea>
+              </div>
+
+              <div class="form-submit-row">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  Send Message →
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-whatsapp"
+                  onclick="
+                    openWhatsApp(
+                      'Hi WebInstant! I would like to discuss my project.',
+                    )
+                  "
+                >
+                  💬 Or Chat on WhatsApp
+                </button>
+              </div>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              <div class="form-success-icon">🎉</div>
+              <h3>Message Redirected to WhatsApp!</h3>
+              <p>
+                Your message has been sent via WhatsApp. We'll respond within
+                6–10 hours.
+              </p>
+            </div>
+          </div>
+
+          <!-- SIDEBAR -->
+          <div class="contact-sidebar">
+            <div class="contact-info-card reveal reveal-delay-1">
+              <h3 class="contact-info-title">Reach Us Directly</h3>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">📧</div>
+                <div>
+                  <div class="contact-info-label">Email</div>
+                  <a
+                    href="mailto:businesswebinstant@gmail.com"
+                    class="contact-info-value"
+                    >businesswebinstant@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">📞</div>
+                <div>
+                  <div class="contact-info-label">Phone &amp; WhatsApp</div>
+                  <a href="tel:+919871072210" class="contact-info-value"
+                    >+91 98710 72210</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">⏱</div>
+                <div>
+                  <div class="contact-info-label">Response Time</div>
+                  <div class="contact-info-value">
+                    Usually within 6–10 hours
+                  </div>
+                </div>
+              </div>
+
+              <div class="quick-info-grid">
+                <div class="quick-info-item">
+                  <span>Location</span>
+                  India (Remote-First)
+                </div>
+                <div class="quick-info-item">
+                  <span>Languages</span>
+                  English, Hindi
+                </div>
+                <div class="quick-info-item">
+                  <span>Payments</span>
+                  UPI, Bank Transfer, PayPal
+                </div>
+                <div class="quick-info-item">
+                  <span>Working Hours</span>
+                  Mon–Sun, 8am – 10pm
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="contact-info-card reveal reveal-delay-2"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  rgba(143, 48, 255, 0.1),
+                  rgba(26, 96, 254, 0.06)
+                );
+                border-color: rgba(143, 48, 255, 0.3);
+              "
+            >
+              <h3 class="contact-info-title">Prefer WhatsApp?</h3>
+              <p
+                style="
+                  font-size: 0.88rem;
+                  color: var(--gray);
+                  margin-bottom: 20px;
+                "
+              >
+                It's the fastest way to reach us — most responses happen within
+                hours.
+              </p>
+              <button
+                class="btn btn-whatsapp"
+                style="width: 100%"
+                onclick="
+                  openWhatsApp(
+                    'Hi WebInstant! I would like to get a free quote.',
+                  )
+                "
+              >
+                💬 Start WhatsApp Chat
+              </button>
+            </div>
+
+            <div
+              class="contact-info-card reveal reveal-delay-1"
+              style="padding: 20px 28px"
+            >
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 12px;
+                  margin-bottom: 6px;
+                "
+              >
+                <span style="font-size: 1.3rem">✅</span>
+                <span style="font-weight: 700; font-size: 0.9rem"
+                  >No commitment required</span
+                >
+              </div>
+              <p style="font-size: 0.8rem; color: var(--gray)">
+                We'll listen to your requirements first and send a custom
+                proposal. You decide if you'd like to proceed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="nav-logo"><img src="logo.png" alt="Logo-WebInstant"></div>
+            <p class="footer-tagline">Launch Fast. Look Great.</p>
+            <a
+              href="mailto:businesswebinstant@gmail.com"
+              class="footer-contact-item"
+              >📧 businesswebinstant@gmail.com</a
+            >
+            <a href="tel:+919871072210" class="footer-contact-item"
+              >📞 +91 98710 72210</a
+            >
+          </div>
+          <div>
+            <div class="footer-col-title">Services</div>
+            <ul class="footer-links">
+              <li><a href="services.html">Portfolio Websites</a></li>
+              <li><a href="services.html">Business Websites</a></li>
+              <li><a href="services.html">Clinic Websites</a></li>
+              <li><a href="services.html">Real Estate Websites</a></li>
+              <li><a href="services.html">Landing Pages</a></li>
+              <li><a href="services.html">Website Redesign</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Company</div>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Get In Touch</div>
+            <p
+              style="
+                font-size: 0.85rem;
+                color: var(--gray);
+                margin-bottom: 16px;
+              "
+            >
+              Have a project in mind? Let's talk — we respond fast.
+            </p>
+            <button class="btn btn-whatsapp" onclick="openWhatsApp()">
+              💬 WhatsApp Us
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div
+          class="container"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            width: 100%;
+          "
+        >
+          <span>© 2026 WebInstant • All rights reserved.</span>
+          <div class="footer-legal">
+            <a href="t&c.html">Terms &amp; Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="refund.html">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Show success state after form submission
+      const form = document.getElementById("contactForm");
+      const success = document.getElementById("formSuccess");
+      if (form) {
+        form.addEventListener("submit", () => {
+          setTimeout(() => {
+            form.style.display = "none";
+            success.classList.add("show");
+          }, 500);
+        });
+      }
+    </script>
+  </body>
+</html>

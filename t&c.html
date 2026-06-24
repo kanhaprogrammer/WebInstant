@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms &amp; Conditions — WebInstant</title>
+    <meta
+      name="description"
+      content="WebInstant Terms & Conditions. Please read our terms carefully before using our web design and development services."
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* ── Reveal ── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: none;
+      }
+
+      /* ── Legal Hero ── */
+      .legal-hero {
+        padding: 140px 24px 64px;
+        text-align: center;
+        background: var(--dark);
+        position: relative;
+        overflow: hidden;
+      }
+      .legal-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(ellipse 70% 60% at 50% 0%, rgba(143, 48, 255, 0.15) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .legal-hero h1 {
+        font-size: clamp(2rem, 5vw, 3.6rem);
+        font-weight: 900;
+        line-height: 1.1;
+        margin-bottom: 16px;
+        position: relative;
+      }
+      .legal-hero .hero-subtitle {
+        font-size: 1rem;
+        color: var(--gray);
+        max-width: 600px;
+        margin: 0 auto 24px;
+        line-height: 1.7;
+        position: relative;
+      }
+      .legal-meta-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.78rem;
+        color: var(--gray);
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        padding: 8px 18px;
+        border-radius: 50px;
+        position: relative;
+      }
+
+      /* ── Legal Container ── */
+      .legal-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* ── TOC Card ── */
+      .toc-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 28px 32px;
+        margin: 40px 0 48px;
+      }
+      .toc-card h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .toc-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4px 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .toc-list li {
+        list-style: none;
+      }
+      .toc-list a {
+        font-size: 0.85rem;
+        color: var(--gray);
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: var(--transition);
+        text-decoration: none;
+      }
+      .toc-list a:hover {
+        color: var(--purple);
+      }
+      .toc-arrow {
+        display: inline-block;
+        font-size: 0.65rem;
+        color: var(--purple);
+        flex-shrink: 0;
+      }
+
+      /* ── Terms Section ── */
+      .terms-section {
+        margin-bottom: 52px;
+        padding-top: 8px;
+      }
+      .terms-section h2 {
+        font-size: clamp(1.2rem, 3vw, 1.55rem);
+        font-weight: 800;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        line-height: 1.3;
+      }
+      .section-icon {
+        font-size: 1.3rem;
+        flex-shrink: 0;
+      }
+      .terms-section h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 20px 0 10px;
+        color: var(--white);
+      }
+      .terms-section p {
+        color: var(--gray);
+        line-height: 1.75;
+        margin-bottom: 12px;
+        font-size: 0.95rem;
+      }
+      .terms-section ul {
+        padding-left: 20px;
+        margin-bottom: 16px;
+      }
+      .terms-section ul li {
+        color: var(--gray);
+        line-height: 1.75;
+        list-style: disc;
+        margin-bottom: 5px;
+        font-size: 0.92rem;
+      }
+
+      /* ── Term Card ── */
+      .term-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        padding: 20px 24px;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        margin: 16px 0;
+      }
+      .term-card-icon {
+        font-size: 1.5rem;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+      .term-card-body h4 {
+        font-size: 0.95rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: var(--white);
+      }
+      .term-card-body ul {
+        padding-left: 18px;
+        margin-bottom: 0;
+      }
+      .term-card-body ul li {
+        color: var(--gray);
+        font-size: 0.88rem;
+        line-height: 1.7;
+        list-style: disc;
+        margin-bottom: 3px;
+      }
+
+      /* ── Badges ── */
+      .badge {
+        font-size: 0.62rem;
+        font-weight: 700;
+        padding: 3px 12px;
+        border-radius: 50px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        white-space: nowrap;
+      }
+      .badge.required {
+        background: rgba(239, 68, 68, 0.15);
+        color: #f87171;
+        border: 1px solid rgba(239, 68, 68, 0.3);
+      }
+      .badge.optional {
+        background: rgba(251, 191, 36, 0.15);
+        color: #fbbf24;
+        border: 1px solid rgba(251, 191, 36, 0.3);
+      }
+
+      /* ── Highlight Box ── */
+      .highlight-box {
+        background: rgba(143, 48, 255, 0.07);
+        border-left: 3px solid var(--purple);
+        padding: 14px 20px;
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        margin: 16px 0;
+      }
+      .highlight-box p {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+        color: var(--gray);
+      }
+      .highlight-box a {
+        color: var(--purple);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .highlight-box a:hover {
+        text-decoration: underline;
+      }
+
+      /* ── Last Updated ── */
+      .last-updated {
+        border-top: 1px solid var(--border);
+        padding-top: 24px;
+        margin-top: 24px;
+        text-align: center;
+        color: var(--gray);
+        font-size: 0.85rem;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 768px) {
+        .toc-list {
+          grid-template-columns: 1fr;
+        }
+        .term-card {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .toc-card {
+          padding: 20px;
+        }
+        .terms-section h2 {
+          gap: 8px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .legal-hero {
+          padding: 120px 16px 48px;
+        }
+        .legal-hero h1 {
+          font-size: 1.9rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><img src="logo.png" alt="Logo-WebInstant"></a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link" data-page="index.html">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-page="about.html">About</a></li>
+          <li><a href="services.html" class="nav-link" data-page="services.html">Services</a></li>
+          <li><a href="plans.html" class="nav-link" data-page="plans.html">Plans</a></li>
+          <li><a href="projects.html" class="nav-link" data-page="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="nav-link" data-page="contact.html">Contact Us</a></li>
+          <li class="nav-cta">
+            <a href="contact.html" class="btn btn-primary btn-sm">Get Free Quote</a>
+          </li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="legal-hero">
+      <h1>Terms &amp; <span class="gradient-text">Conditions</span></h1>
+      <p class="hero-subtitle">
+        Welcome to WebInstant. By using our services, you agree to these Terms &amp; Conditions.
+        Please read them carefully before proceeding.
+      </p>
+      <span class="legal-meta-badge">📅 Last Updated: 1 July 2025</span>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="container section" style="padding-top: 0">
+      <div class="legal-container">
+
+        <!-- Table of Contents -->
+        <div class="toc-card reveal">
+          <h3>📋 Quick Navigation</h3>
+          <ul class="toc-list">
+            <li><a href="#overview"><span class="toc-arrow">›</span> Overview</a></li>
+            <li><a href="#eligibility"><span class="toc-arrow">›</span> Eligibility</a></li>
+            <li><a href="#project-scope"><span class="toc-arrow">›</span> Project Scope</a></li>
+            <li><a href="#payments"><span class="toc-arrow">›</span> Payments</a></li>
+            <li><a href="#timeline"><span class="toc-arrow">›</span> Project Timeline</a></li>
+            <li><a href="#revisions"><span class="toc-arrow">›</span> Revisions Policy</a></li>
+            <li><a href="#delivery"><span class="toc-arrow">›</span> Delivery &amp; Handover</a></li>
+            <li><a href="#maintenance"><span class="toc-arrow">›</span> Maintenance</a></li>
+            <li><a href="#client-resp"><span class="toc-arrow">›</span> Client Responsibilities</a></li>
+            <li><a href="#hosting"><span class="toc-arrow">›</span> Hosting &amp; Domain</a></li>
+            <li><a href="#refund"><span class="toc-arrow">›</span> Refund Policy</a></li>
+            <li><a href="#ownership"><span class="toc-arrow">›</span> Ownership &amp; Portfolio</a></li>
+            <li><a href="#confidentiality"><span class="toc-arrow">›</span> Confidentiality</a></li>
+            <li><a href="#liability"><span class="toc-arrow">›</span> Limitation of Liability</a></li>
+            <li><a href="#termination"><span class="toc-arrow">›</span> Termination</a></li>
+            <li><a href="#acceptance"><span class="toc-arrow">›</span> Acceptance</a></li>
+          </ul>
+        </div>
+
+        <!-- Section 1 -->
+        <section class="terms-section reveal" id="overview">
+          <h2><span class="section-icon">🌐</span> 1. Overview</h2>
+          <p>
+            WebInstant provides a range of digital services tailored for individuals and businesses.
+            All services are delivered based on the selected plan and agreed project scope.
+          </p>
+          <div class="term-card">
+            <div class="term-card-icon">💻</div>
+            <div class="term-card-body">
+              <h4>Services Offered</h4>
+              <ul>
+                <li>Website Development</li>
+                <li>Portfolio Websites</li>
+                <li>Business Websites</li>
+                <li>E-commerce Setup</li>
+                <li>Website Maintenance</li>
+                <li>Hosting &amp; Deployment Support</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="terms-section reveal" id="eligibility">
+          <h2><span class="section-icon">✅</span> 2. Eligibility</h2>
+          <p>By using our services, you confirm that:</p>
+          <div class="term-card">
+            <div class="term-card-icon">🪪</div>
+            <div class="term-card-body">
+              <h4>Requirements</h4>
+              <ul>
+                <li>You are at least 18 years old, or have guardian permission</li>
+                <li>You are legally authorized to enter into an agreement</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="terms-section reveal" id="project-scope">
+          <h2><span class="section-icon">📐</span> 3. Project Scope</h2>
+          <p>
+            All work will be done strictly as per the selected plan features and
+            client-approved requirements.
+          </p>
+          <div class="highlight-box">
+            <p>
+              <strong>⚠️ Important:</strong> Any extra features, pages, or changes outside the
+              agreed scope will be charged separately.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="terms-section reveal" id="payments">
+          <h2>
+            <span class="section-icon">💳</span> 4. Payments
+            <span class="badge required">Required</span>
+          </h2>
+          <div class="term-card">
+            <div class="term-card-icon">₹</div>
+            <div class="term-card-body">
+              <h4>Payment Structure</h4>
+              <ul>
+                <li>50% advance payment required before starting work</li>
+                <li>50% remaining payment before final delivery</li>
+                <li>Work starts only after advance payment is received</li>
+                <li>All payments are non-refundable once work has started or resources are allocated</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section class="terms-section reveal" id="timeline">
+          <h2><span class="section-icon">🕐</span> 5. Project Timeline</h2>
+          <p>
+            Delivery time depends on project type and complexity, client response time, and
+            content provided on time.
+          </p>
+          <div class="highlight-box">
+            <p>
+              ⏳ Delays in content or approvals from the client's side may increase the overall
+              delivery time.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 6 -->
+        <section class="terms-section reveal" id="revisions">
+          <h2><span class="section-icon">🔄</span> 6. Revisions Policy</h2>
+          <div class="term-card">
+            <div class="term-card-icon">✏️</div>
+            <div class="term-card-body">
+              <h4>Revision Terms</h4>
+              <ul>
+                <li>Each plan includes a limited number of revisions</li>
+                <li>Revisions are for minor changes only</li>
+                <li>New features or major redesigns will be charged separately</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 7 -->
+        <section class="terms-section reveal" id="delivery">
+          <h2><span class="section-icon">📦</span> 7. Delivery &amp; Handover</h2>
+          <p>After project completion:</p>
+          <div class="term-card">
+            <div class="term-card-icon">🎁</div>
+            <div class="term-card-body">
+              <h4>What You Receive</h4>
+              <ul>
+                <li>Website files or live deployment will be provided</li>
+                <li>Basic guidance may be included (based on plan)</li>
+                <li>Client is responsible for login credentials after handover</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 8 -->
+        <section class="terms-section reveal" id="maintenance">
+          <h2>
+            <span class="section-icon">🔧</span> 8. Maintenance
+            <span class="badge optional">Plan-based</span>
+          </h2>
+          <p>Maintenance applies only if included in the plan or purchased separately:</p>
+          <div class="term-card">
+            <div class="term-card-icon">🛠️</div>
+            <div class="term-card-body">
+              <h4>Covered Under Maintenance</h4>
+              <ul>
+                <li>Minor content updates</li>
+                <li>Bug fixes</li>
+                <li>Basic support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="highlight-box">
+            <p>
+              <strong>Note:</strong> Maintenance does not include redesign or development
+              of new features.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 9 -->
+        <section class="terms-section reveal" id="client-resp">
+          <h2><span class="section-icon">🙋</span> 9. Client Responsibilities</h2>
+          <p>Clients must provide the following for project progress:</p>
+          <div class="term-card">
+            <div class="term-card-icon">📋</div>
+            <div class="term-card-body">
+              <h4>Required from Client</h4>
+              <ul>
+                <li>Content — text, images, and branding assets</li>
+                <li>Accurate and complete project requirements</li>
+                <li>Hosting/domain access (if needed for deployment)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="highlight-box">
+            <p>Delays caused by missing or late content are not WebInstant's responsibility.</p>
+          </div>
+        </section>
+
+        <!-- Section 10 -->
+        <section class="terms-section reveal" id="hosting">
+          <h2><span class="section-icon">🖥️</span> 10. Hosting &amp; Domain</h2>
+          <p>
+            WebInstant does not own or manage hosting or domain accounts. We only assist with
+            setup, deployment, and configuration.
+          </p>
+          <div class="highlight-box">
+            <p>
+              Any hosting issues are handled directly by the respective hosting provider —
+              not WebInstant.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 11 -->
+        <section class="terms-section reveal" id="refund">
+          <h2><span class="section-icon">💰</span> 11. Refund Policy</h2>
+          <div class="term-card">
+            <div class="term-card-icon">↩️</div>
+            <div class="term-card-body">
+              <h4>Refund Conditions</h4>
+              <ul>
+                <li>Refunds are not available once work has started or resources are allocated</li>
+                <li>Refund is only possible if the project has not started at all</li>
+              </ul>
+            </div>
+          </div>
+          <div class="highlight-box">
+            <p>
+              For full details, please read our <a href="refund.html">Refund Policy page</a>.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 12 -->
+        <section class="terms-section reveal" id="ownership">
+          <h2><span class="section-icon">©️</span> 12. Ownership &amp; Portfolio Rights</h2>
+          <p>After full payment has been received:</p>
+          <div class="term-card">
+            <div class="term-card-icon">🏆</div>
+            <div class="term-card-body">
+              <h4>Rights Transfer</h4>
+              <ul>
+                <li>Client owns the final website and all deliverables</li>
+                <li>
+                  WebInstant may showcase the project in its portfolio unless the client
+                  requests otherwise in writing
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 13 -->
+        <section class="terms-section reveal" id="confidentiality">
+          <h2><span class="section-icon">🔒</span> 13. Confidentiality</h2>
+          <p>We respect client privacy and do not share:</p>
+          <div class="term-card">
+            <div class="term-card-icon">🛡️</div>
+            <div class="term-card-body">
+              <h4>What We Protect</h4>
+              <ul>
+                <li>Personal data</li>
+                <li>Business information</li>
+                <li>Project files and assets</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 14 -->
+        <section class="terms-section reveal" id="liability">
+          <h2><span class="section-icon">⚖️</span> 14. Limitation of Liability</h2>
+          <p>WebInstant is not responsible for:</p>
+          <div class="term-card">
+            <div class="term-card-icon">⚠️</div>
+            <div class="term-card-body">
+              <h4>Exclusions</h4>
+              <ul>
+                <li>Hosting/server issues</li>
+                <li>Domain problems</li>
+                <li>Third-party tool failures</li>
+                <li>Data loss due to client actions</li>
+              </ul>
+            </div>
+          </div>
+          <div class="highlight-box">
+            <p>
+              Maximum liability is limited to the total amount paid for the specific project
+              in question.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 15 -->
+        <section class="terms-section reveal" id="termination">
+          <h2><span class="section-icon">🚫</span> 15. Termination</h2>
+          <p>We may cancel a project in the following circumstances:</p>
+          <div class="term-card">
+            <div class="term-card-icon">🚪</div>
+            <div class="term-card-body">
+              <h4>Grounds for Termination</h4>
+              <ul>
+                <li>Client is unresponsive for 7 or more days</li>
+                <li>Abuse or inappropriate behaviour toward the team</li>
+                <li>Payment terms are not followed</li>
+              </ul>
+            </div>
+          </div>
+          <div class="highlight-box">
+            <p>Work completed up to the point of cancellation must be paid in full.</p>
+          </div>
+        </section>
+
+        <!-- Section 16 -->
+        <section class="terms-section reveal" id="acceptance">
+          <h2><span class="section-icon">📝</span> 16. Acceptance</h2>
+          <p>
+            By using WebInstant services — whether by placing an order, making a payment, or
+            communicating project requirements — you confirm that you have read, understood, and
+            agreed to all of these Terms &amp; Conditions.
+          </p>
+        </section>
+
+        <div class="last-updated">
+          <p>📅 Last Updated: 1 July 2025</p>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="nav-logo"><img src="logo.png" alt="Logo-WebInstant"></div>
+            <p class="footer-tagline">Launch Fast. Look Great.</p>
+            <a href="mailto:businesswebinstant@gmail.com" class="footer-contact-item">📧 businesswebinstant@gmail.com</a>
+            <a href="tel:+919871072210" class="footer-contact-item">📞 +91 98710 72210</a>
+          </div>
+          <div>
+            <div class="footer-col-title">Services</div>
+            <ul class="footer-links">
+              <li><a href="services.html">Portfolio Websites</a></li>
+              <li><a href="services.html">Business Websites</a></li>
+              <li><a href="services.html">Clinic Websites</a></li>
+              <li><a href="services.html">Real Estate Websites</a></li>
+              <li><a href="services.html">Landing Pages</a></li>
+              <li><a href="services.html">Website Redesign</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Company</div>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="plans.html">Plans</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Get In Touch</div>
+            <p style="font-size: 0.85rem; color: var(--gray); margin-bottom: 16px;">
+              Have a project in mind? Let's talk — we respond fast.
+            </p>
+            <button class="btn btn-whatsapp" onclick="openWhatsApp()">💬 WhatsApp Us</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; width: 100%;">
+          <span>© 2026 WebInstant • All rights reserved.</span>
+          <div class="footer-legal">
+            <a href="t_c.html">Terms &amp; Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="refund.html">Refund Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // TOC smooth scroll
+      document.querySelectorAll('.toc-list a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const target = document.querySelector(link.getAttribute("href"));
+          if (target) window.scrollTo({ top: target.offsetTop - 90, behavior: "smooth" });
+        });
+      });
+
+      // Reveal
+      const revealObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              revealObs.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.08 }
+      );
+      document.querySelectorAll(".reveal").forEach((el) => revealObs.observe(el));
+    </script>
+  </body>
+</html>
