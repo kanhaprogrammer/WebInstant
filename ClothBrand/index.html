@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClothBrand | Premium Fashion & Style</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Discover premium fashion at ClothBrand. Trendy clothing, accessories, and style essentials for the modern Indian consumer.">
+    <meta name="keywords" content="clothing brand, fashion, Indian fashion, premium clothing, style, accessories">
+    <meta name="author" content="ClothBrand">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ClothBrand | Premium Fashion & Style">
+    <meta property="og:description" content="Discover premium fashion at ClothBrand.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://clothbrand.com">
+    <meta property="og:site_name" content="ClothBrand">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://clothbrand.com">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ClothBrand",
+        "url": "https://clothbrand.com",
+        "description": "Premium fashion and style brand for the modern Indian consumer"
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="navbar" aria-label="Main navigation">
+                <div class="logo">
+                    <a href="index.html" aria-label="ClothBrand Home">
+                        <div class="logo-container">
+                            <img src="assets/logo.png" alt="ClothBrand Logo" class="logo-image" width="75" height="75">
+                        </div>
+                    </a>
+                </div>
+
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                </button>
+
+                <ul class="nav-menu" role="menu">
+                    <li role="none"><a href="index.html" class="active" role="menuitem" aria-current="page">
+                            <i class="fas fa-home" aria-hidden="true"></i> Home
+                        </a></li>
+                    <li role="none"><a href="products.html" role="menuitem">
+                            <i class="fas fa-tshirt" aria-hidden="true"></i> Collection
+                        </a></li>
+                    <li role="none"><a href="blogs.html" role="menuitem">
+                            <i class="fas fa-newspaper" aria-hidden="true"></i> Style Blog
+                        </a></li>
+                    <li role="none"><a href="about.html" role="menuitem">
+                            <i class="fas fa-users" aria-hidden="true"></i> About
+                        </a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">
+                            <i class="fas fa-envelope" aria-hidden="true"></i> Contact
+                        </a></li>
+                    <li role="none"><a href="login.html" class="login-link" role="menuitem">
+                            <i class="fas fa-sign-in-alt" aria-hidden="true"></i> Login
+                        </a></li>
+                    <li role="none">
+                        <a href="cart.html" class="cart-icon" role="menuitem" aria-label="Shopping cart">
+                            <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-label="Hero section">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge">New Collection 2026</span>
+                    <h1 class="hero-title animate-fade-in">Style That Defines You</h1>
+                    <p class="hero-subtitle animate-fade-in-delay">
+                        Discover premium fashion designed for the modern Indian. From timeless classics to trending
+                        styles, find your perfect look.
+                    </p>
+                    <div class="hero-buttons animate-fade-in-delay-2">
+                        <a href="products.html" class="btn btn-primary">
+                            <i class="fas fa-shopping-bag" aria-hidden="true"></i> Shop Now
+                        </a>
+                        <a href="about.html" class="btn btn-secondary">
+                            <i class="fas fa-play-circle" aria-hidden="true"></i> Our Story
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                    </div>
+                </div>
+
+                <div class="hero-image" aria-hidden="true">
+                    <div class="hero-circle">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&h=600&fit=crop"
+                            alt="Fashion Collection">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products" aria-labelledby="featured-products-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Trending Now</span>
+                    <h2 id="featured-products-heading">Featured Collection</h2>
+                    <p>Discover our most popular styles this season</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card" aria-label="Classic White Shirt product card">
+                        <div class="product-badge" aria-hidden="true">New</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=400&fit=crop"
+                                alt="Classic White Shirt" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Shirts</span>
+                            <h3>Classic White Shirt</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-count">(856 reviews)</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="current-price">₹1,299</span>
+                                </div>
+                                <button class="quick-add" data-product="1" data-name="Classic White Shirt"
+                                    data-price="1299"
+                                    data-image="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=400&fit=crop">
+                                    <i class="fas fa-cart-plus" aria-hidden="true"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card" aria-label="Denim Jacket product card">
+                        <div class="product-badge" aria-hidden="true">Trending</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=400&h=400&fit=crop"
+                                alt="Denim Jacket" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Jackets</span>
+                            <h3>Denim Jacket</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-count">(634 reviews)</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="current-price">₹2,499</span>
+                                </div>
+                                <button class="quick-add" data-product="2" data-name="Denim Jacket" data-price="2499"
+                                    data-image="https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=400&h=400&fit=crop">
+                                    <i class="fas fa-cart-plus" aria-hidden="true"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card" aria-label="Cotton T-Shirt product card">
+                        <div class="product-badge" aria-hidden="true">Sale</div>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop"
+                                alt="Cotton T-Shirt" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">T-Shirts</span>
+                            <h3>Cotton T-Shirt</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-count">(1,234 reviews)</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="current-price">₹799</span>
+                                    <span class="original-price">₹1,199</span>
+                                </div>
+                                <button class="quick-add" data-product="3" data-name="Cotton T-Shirt" data-price="799"
+                                    data-image="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop">
+                                    <i class="fas fa-cart-plus" aria-hidden="true"></i> Add
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="button-center">
+                    <a href="products.html" class="btn btn-secondary">
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i> View All Collection
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Blogs Section -->
+        <section class="featured-blogs" aria-labelledby="featured-blogs-heading">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Style Tips</span>
+                    <h2 id="featured-blogs-heading">Fashion Blog</h2>
+                    <p>Stay updated with the latest fashion trends and style guides</p>
+                </div>
+
+                <div class="blogs-grid">
+                    <!-- Blog 1 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=400&h=250&fit=crop"
+                                alt="Summer Fashion Trends" loading="lazy">
+                            <div class="blog-category">Fashion Trends</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="far fa-calendar"></i> June 15, 2025</span>
+                                <span class="blog-read-time"><i class="far fa-clock"></i> 5 min read</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="blogs.html">Top 10 Summer Fashion Trends 2025</a>
+                            </h3>
+                            <p class="blog-excerpt">Discover the must-have styles for this summer season</p>
+                            <div class="blog-footer">
+                                <a href="blogs.html" class="blog-read-more">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <div class="blog-author">
+                                    <span>Style Editor</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog 2 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=250&fit=crop"
+                                alt="Ethnic Wear" loading="lazy">
+                            <div class="blog-category">Ethnic Wear</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="far fa-calendar"></i> June 12, 2025</span>
+                                <span class="blog-read-time"><i class="far fa-clock"></i> 4 min read</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="blogs.html">How to Style Ethnic Wear for Modern Events</a>
+                            </h3>
+                            <p class="blog-excerpt">Tips to look elegant while staying comfortable</p>
+                            <div class="blog-footer">
+                                <a href="blogs.html" class="blog-read-more">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <div class="blog-author">
+                                    <span>Fashion Expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog 3 -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?w=400&h=250&fit=crop"
+                                alt="Accessories Guide" loading="lazy">
+                            <div class="blog-category">Accessories</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="far fa-calendar"></i> June 10, 2025</span>
+                                <span class="blog-read-time"><i class="far fa-clock"></i> 6 min read</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="blogs.html">The Ultimate Accessories Guide for Men</a>
+                            </h3>
+                            <p class="blog-excerpt">Complete your look with the perfect accessories</p>
+                            <div class="blog-footer">
+                                <a href="blogs.html" class="blog-read-more">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <div class="blog-author">
+                                    <span>Style Guide</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="button-center">
+                    <a href="blogs.html" class="btn btn-secondary">
+                        <i class="fas fa-newspaper" aria-hidden="true"></i> View All Blogs
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="ClothBrand">
+                    </div>
+                    <p class="footer-description">Premium fashion for the modern Indian. Style that defines you.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Collection</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="blogs.html">Style Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Mumbai, India</li>
+                        <li><i class="fas fa-phone"></i> +91 00000 00000</li>
+                        <li><i class="fas fa-envelope"></i> hello@clothbrand.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2026 ClothBrand. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js" defer></script>
+</body>
+
+</html>

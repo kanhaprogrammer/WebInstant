@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | MittiMart – Get In Touch</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Contact MittiMart for questions about our handmade & organic products, artisan collaborations, sustainable living tips, or partnership opportunities.">
+    <meta name="keywords" content="contact MittiMart, artisan collaborations, product inquiries, sustainable living questions, customer support, partnership inquiries">
+    <meta name="author" content="MittiMart">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Us | MittiMart – Get In Touch">
+    <meta property="og:description" content="Get in touch with MittiMart for product inquiries, artisan collaborations, or sustainable living guidance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mittimart.com/contact">
+    <meta property="og:site_name" content="MittiMart">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact Us | MittiMart – Get In Touch">
+    <meta name="twitter:description" content="Contact MittiMart for sustainable product inquiries">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mittimart.com/contact">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/MittiMart-Logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact MittiMart",
+        "description": "Contact page for sustainable product inquiries",
+        "url": "https://mittimart.com/contact",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "telephone": "+910000000000",
+            "email": "hello@mittimart.com",
+            "availableLanguage": ["English", "Hindi"],
+            "hoursAvailable": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" aria-label="Main navigation">
+                <div class="logo">
+                    <a href="index.html" aria-label="MittiMart Home">
+                        <div class="logo-container">
+                            <img src="assets/MittiMart-BGrm-Logo.png" alt="MittiMart – Handmade & Organic Products"
+                                class="logo-image">
+                        </div>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="products.html"><i class="fas fa-leaf"></i> Products</a></li>
+                    <li><a href="blogs.html"><i class="fas fa-newspaper"></i> Blogs</a></li>
+                    <li><a href="about.html"><i class="fas fa-users"></i> About</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="login.html" class="login-link"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li><a href="cart.html" class="cart-icon" aria-label="Shopping cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span></span>
+                        </a></li>
+                </ul>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero" aria-labelledby="contact-hero-title">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="page-title" id="contact-hero-title">Let's Connect</h1>
+                <p class="page-subtitle">We'd love to hear from you. Whether you have questions about our products, want
+                    to collaborate, or just want to share your sustainable living journey.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Main -->
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <section class="contact-form-section" aria-labelledby="contact-form-title">
+                    <h2 id="contact-form-title">Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name"
+                                aria-describedby="nameError">
+                            <div class="error-message" id="nameError" role="alert"></div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com"
+                                    aria-describedby="emailError">
+                                <div class="error-message" id="emailError" role="alert"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210"
+                                    aria-describedby="phoneError">
+                                <div class="error-message" id="phoneError" role="alert"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required
+                                placeholder="Tell us what's on your mind..." aria-describedby="messageError"></textarea>
+                            <div class="error-message" id="messageError" role="alert"></div>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter for sustainable living tips and
+                                updates</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn" aria-live="polite">
+                            <span class="btn-text">Send Message</span>
+                            <div class="loading-spinner" aria-hidden="true"></div>
+                        </button>
+
+                        <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <p>Thank you! Your message has been sent successfully. We'll get back to you within 24
+                                hours.</p>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Contact Info -->
+                <aside class="contact-info-section" aria-labelledby="contact-info-title">
+                    <div class="contact-info-card">
+                        <h3 id="contact-info-title">Get In Touch</h3>
+                        <p>We're here to help with any questions about our products, orders, or sustainable living.</p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon" aria-hidden="true">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Email Us</h4>
+                                    <p>hello@mittimart.com</p>
+                                    <p>support@mittimart.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon" aria-hidden="true">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Call Us</h4>
+                                    <p>+91 00000 00000</p>
+                                    <p>+91 00000 00000</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon" aria-hidden="true">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Visit Us</h4>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <p>Lorem, ipsum dolor.</p>
+                                    <p>Lorem, ipsum.</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon" aria-hidden="true">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h4>Business Hours</h4>
+                                    <p>Monday - Saturday: 10AM - 7PM</p>
+                                    <p>Sunday: 9AM - 9PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-contact">
+                            <h4>Follow Our Journey</h4>
+                            <div class="social-icons">
+                                <a href="https://instagram.com/mittimart" class="social-icon" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="https://facebook.com/mittimart" class="social-icon" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                                    <span>Facebook</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Map Section
+    <section class="map-section" aria-labelledby="map-section-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="map-section-title">Find Us Here</h2>
+                <p>Visit our headquarters or connect with our regional artisan centers</p>
+            </div>
+
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <h3>MittiMart Headquarters</h3>
+                        <p>123 Earth Street, Sustainable City, Jaipur, Rajasthan 302001</p>
+                        <div class="map-details">
+                            <p><i class="fas fa-phone" aria-hidden="true"></i> +91 98765 43210</p>
+                            <p><i class="fas fa-envelope" aria-hidden="true"></i> visit@mittimart.com</p>
+                            <p><i class="fas fa-clock" aria-hidden="true"></i> Mon-Sat: 10AM-7PM, Sun: 11AM-5PM</p>
+                        </div>
+                        <button class="btn btn-secondary get-directions" aria-label="Get directions to MittiMart Headquarters">
+                            <i class="fas fa-directions" aria-hidden="true"></i> Get Directions
+                        </button>
+                    </div>
+                </div>
+
+                <div class="map-locations">
+                    <h4>Our Regional Centers</h4>
+                    <div class="locations-list">
+                        <div class="location-item" tabindex="0" role="button" aria-label="North India Center - Delhi, Craft Training & Distribution">
+                            <h5>North India Center</h5>
+                            <p>Delhi · Craft Training & Distribution</p>
+                        </div>
+                        <div class="location-item" tabindex="0" role="button" aria-label="South India Center - Chennai, Textile & Weaving Hub">
+                            <h5>South India Center</h5>
+                            <p>Chennai · Textile & Weaving Hub</p>
+                        </div>
+                        <div class="location-item" tabindex="0" role="button" aria-label="East India Center - Kolkata, Natural Material Sourcing">
+                            <h5>East India Center</h5>
+                            <p>Kolkata · Natural Material Sourcing</p>
+                        </div>
+                        <div class="location-item" tabindex="0" role="button" aria-label="West India Center - Mumbai, Design & Innovation Lab">
+                            <h5>West India Center</h5>
+                            <p>Mumbai · Design & Innovation Lab</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/MittiMart-BGrm-Logo.png" alt="MittiMart">
+                        <h3>MittiMart</h3>
+                    </div>
+                    <p class="footer-description">Bringing you handcrafted treasures and sustainable products that
+                        connect you to nature.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop Products</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="blogs.html">Sustainability Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fas fa-phone"></i> +91 00000 00000</li>
+                        <li><i class="fas fa-envelope"></i> hello@mittimart.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2025 WebInstant. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/cart-manager.js"></script>
+</body>
+
+</html>

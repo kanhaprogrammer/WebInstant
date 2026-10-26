@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | MittiMart – Sustainable Shopping Account</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sign in to your MittiMart account to track orders, access wishlist, get member discounts on sustainable products, and manage your eco-friendly profile.">
+    <meta name="keywords" content="MittiMart login, sustainable shopping account, eco-friendly account, track orders, member discounts, artisan support">
+    <meta name="author" content="MittiMart">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Login | MittiMart – Sustainable Shopping Account">
+    <meta property="og:description" content="Sign in to your MittiMart account for sustainable shopping benefits.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mittimart.com/login">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Login | MittiMart – Sustainable Shopping Account">
+    <meta name="twitter:description" content="Sign in to your MittiMart account">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mittimart.com/login">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/MittiMart-Logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" aria-label="Main navigation">
+                <div class="logo">
+                    <a href="index.html" aria-label="MittiMart Home">
+                        <div class="logo-container">
+                            <img src="assets/MittiMart-BGrm-Logo.png" alt="MittiMart – Handmade & Organic Products"
+                                class="logo-image">
+                        </div>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> <span
+                                class="nav-text">Home</span></a></li>
+                    <li><a href="products.html"><i class="fas fa-leaf" aria-hidden="true"></i> <span
+                                class="nav-text">Products</span></a></li>
+                    <li><a href="blogs.html"><i class="fas fa-newspaper" aria-hidden="true"></i> <span
+                                class="nav-text">Blogs</span></a></li>
+                    <li><a href="about.html"><i class="fas fa-users" aria-hidden="true"></i> <span
+                                class="nav-text">About</span></a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope" aria-hidden="true"></i> <span
+                                class="nav-text">Contact</span></a></li>
+                    <li><a href="register.html" class="login-link"><i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+                            <span class="nav-text">Register</span></a></li>
+                    <li><a href="cart.html" class="cart-icon" aria-label="Shopping cart (0 items)">
+                            <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            <span></span>
+                        </a></li>
+                </ul>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Login Hero -->
+    <main class="login-hero" aria-labelledby="login-hero-title">
+        <div class="container">
+            <div class="login-hero-content">
+                <div class="login-hero-text">
+                    <h1 id="login-hero-title">Welcome Back</h1>
+                    <p>Sign in to your MittiMart account to continue your sustainable shopping journey.</p>
+                    <div class="login-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            <span>Track your orders</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-heart" aria-hidden="true"></i>
+                            <span>Access your wishlist</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-tag" aria-hidden="true"></i>
+                            <span>Exclusive member discounts</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-leaf" aria-hidden="true"></i>
+                            <span>Personalized sustainable tips</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image" aria-hidden="true">
+                    <div class="earth-circle">
+                        <img src="assets/MittiMart-Logo.png" alt="MittiMart-Logo">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Login Section -->
+    <section class="login-section" aria-labelledby="login-form-title">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-card">
+                    <div class="login-header">
+                        <h2 id="login-form-title">Sign In to Your Account</h2>
+                        <p>Enter your credentials to access your account</p>
+                    </div>
+
+                    <form id="loginForm" class="login-form" novalidate aria-labelledby="login-form-title">
+                        <div class="form-group">
+                            <label for="loginEmail">Email Address <span class="sr-only">(required)</span></label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <input type="email" id="loginEmail" name="email" required placeholder="your@email.com"
+                                    aria-describedby="emailError" autocomplete="email">
+                            </div>
+                            <div class="error-message" id="emailError" role="alert" aria-live="polite"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="loginPassword">Password <span class="sr-only">(required)</span></label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock" aria-hidden="true"></i>
+                                <input type="password" id="loginPassword" name="password" required
+                                    placeholder="Enter your password" aria-describedby="passwordError passwordRules"
+                                    autocomplete="current-password">
+                                <button type="button" class="password-toggle" id="passwordToggle"
+                                    aria-label="Show password">
+                                    <i class="fas fa-eye" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div id="passwordRules" class="sr-only">Password must be at least 6 characters long</div>
+                            <div class="error-message" id="passwordError" role="alert" aria-live="polite"></div>
+                        </div>
+
+                        <div class="form-options">
+                            <div class="remember-me">
+                                <input type="checkbox" id="rememberMe" name="remember"
+                                    aria-label="Remember me on this device">
+                                <label for="rememberMe">Remember me</label>
+                            </div>
+                            <a href="#" class="forgot-password" id="forgotPassword">Forgot password?</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary login-btn" aria-label="Sign in to account">
+                            <span class="btn-text">Sign In</span>
+                            <div class="loading-spinner" aria-hidden="true"></div>
+                        </button>
+
+                        <div class="login-divider" aria-hidden="true">
+                            <span>or continue with</span>
+                        </div>
+
+                        <div class="social-login">
+                            <button type="button" class="social-btn google-btn" aria-label="Sign in with Google">
+                                <i class="fab fa-google" aria-hidden="true"></i>
+                                <span>Google</span>
+                            </button>
+                            <button type="button" class="social-btn facebook-btn" aria-label="Sign in with Facebook">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                                <span>Facebook</span>
+                            </button>
+                        </div>
+
+                        <div class="login-footer">
+                            <p>Don't have an account? <a href="register.html">Create one now</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="login-info-card">
+                    <div class="info-card-content">
+                        <h3>New to MittiMart?</h3>
+                        <p>Join our community of conscious consumers and discover the benefits of sustainable shopping.
+                        </p>
+
+                        <div class="info-features">
+                            <div class="info-feature">
+                                <i class="fas fa-shipping-fast" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Fast & Eco-Friendly Delivery</h4>
+                                    <p>Carbon-neutral shipping across India</p>
+                                </div>
+                            </div>
+                            <div class="info-feature">
+                                <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Artisan Support</h4>
+                                    <p>Your purchases directly support traditional craftspeople</p>
+                                </div>
+                            </div>
+                            <div class="info-feature">
+                                <i class="fas fa-seedling" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Sustainability Rewards</h4>
+                                    <p>Earn points for eco-friendly choices</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="register.html" class="btn btn-secondary">Create Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forgot Password Modal -->
+    <div class="modal" id="forgotPasswordModal" role="dialog" aria-modal="true" aria-labelledby="modal-title"
+        aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close dialog">&times;</button>
+            <div class="modal-header">
+                <h3 id="modal-title">Reset Your Password</h3>
+                <p>Enter your email address and we'll send you instructions to reset your password.</p>
+            </div>
+            <form id="forgotPasswordForm" novalidate>
+                <div class="form-group">
+                    <label for="resetEmail">Email Address <span class="sr-only">(required)</span></label>
+                    <input type="email" id="resetEmail" required placeholder="your@email.com"
+                        aria-describedby="resetEmailError" autocomplete="email">
+                    <div class="error-message" id="resetEmailError" role="alert" aria-live="polite"></div>
+                </div>
+                <button type="submit" class="btn btn-primary reset-btn" aria-label="Send password reset instructions">
+                    <span class="btn-text">Send Reset Instructions</span>
+                    <div class="loading-spinner" aria-hidden="true"></div>
+                </button>
+                <div class="form-success" id="resetSuccess" role="alert" aria-live="assertive">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                    <p>Password reset instructions have been sent to your email!</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Demo Credentials Banner -->
+    <div class="demo-banner" id="demoBanner" role="alert" aria-live="polite">
+        <div class="container">
+            <p><strong>Demo Tip:</strong> Use email: <code>demo@mittimart.com</code> and password: <code>demo123</code>
+                for quick login</p>
+            <button class="close-banner" id="closeBanner" aria-label="Close demo tip">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/MittiMart-BGrm-Logo.png" alt="MittiMart">
+                        <h3>MittiMart</h3>
+                    </div>
+                    <p class="footer-description">Bringing you handcrafted treasures and sustainable products that
+                        connect you to nature.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop Products</a></li>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="blogs.html">Sustainability Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fas fa-phone"></i> +91 00000 00000</li>
+                        <li><i class="fas fa-envelope"></i> hello@mittimart.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2025 WebInstant. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts/login.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/cart-manager.js"></script>
+</body>
+
+</html>
